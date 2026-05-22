@@ -1,19 +1,20 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 
-export default function Detalhe({ route, navigation } : any) {
+export default function Detalhe({ route, navigation }: any) {
 
     //desestruturação de objetos JS
-    const {idlivro, titulolivro} = route.params;
+    const { idlivro, titulolivro, editoralivro } = route.params;
 
     return (
         <View style={{ flex: 1 }}>
             <Text>Detalhes do Livro</Text>
-            <Text>ID: { idlivro }</Text>
-            <Text>Titulo: { titulolivro }</Text>
+            <Text>ID: {idlivro}</Text>
+            <Text>Titulo: {titulolivro}</Text>
+            <Text>Editora: {editoralivro}</Text>
             <Button
                 title='Voltar'
-                onPress={ () => navigation.goBack() }
+                onPress={() => navigation.goBack()}
             />
         </View>
     );

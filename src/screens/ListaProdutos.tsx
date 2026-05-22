@@ -5,8 +5,8 @@ import { View, Text, Button, StyleSheet }
 export default function ListaProdutos( {navigation} : any ) {
     //mock
     const livro = {
-        id: '123',
-        titulo: 'Diário de um banana',
+        id: '456',
+        titulo: 'Teste 2',
         editora: 'Vozes',
     }
 
